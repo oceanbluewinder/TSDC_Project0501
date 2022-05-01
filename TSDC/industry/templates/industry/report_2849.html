@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block Content %}
+{% load static %}
+<h1>成功了37</h1>
+
+<div class="container">
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>年度</th>
+                <th>毛利率</th>
+                <th>營業利率</th>
+                <th>稅後盈餘</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- report2849表格資料 -->
+            {% if report2849 %}
+            {% for i in report2849 %}
+            <tr>
+                <td>{{i.Date}}</td>
+                <td>{{i.A}}</td>
+                <td>{{i.B}}</td>
+                <td>{{i.C}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
+            scrolling="yes"
+            src="{% static 'html/2849財報折線圖.html' %}">
+    </iframe>
+</div>
+{% endblock Content %}

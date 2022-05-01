@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block Content %}
+{% load static %}
+<h1>成功了11</h1>
+
+<div class="container">
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>日期</th>
+                <th>成交股數</th>
+                <th>成交總額</th>
+                <th>開盤價</th>
+                <th>最高價</th>
+                <th>最低價</th>
+                <th>價差</th>
+                <th>成交筆數</th>
+                <th>CDP(均價)</th>
+                <th>AH(行情最高價)</th>
+                <th>NH(近高值)</th>
+                <th>NL(近低值)</th>
+                <th>AL(行情最低價)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- index2324表格資料 -->
+            {% if index2324 %}
+            {% for i in index2324 %}
+            <tr>
+                <td>{{i.Date}}</td>
+                <td>{{i.A}}</td>
+                <td>{{i.B}}</td>
+                <td>{{i.C}}</td>
+                <td>{{i.D}}</td>
+                <td>{{i.E}}</td>
+                <td>{{i.F}}</td>
+                <td>{{i.G}}</td>
+                <td>{{i.H}}</td>
+                <td>{{i.I}}</td>
+                <td>{{i.K}}</td>
+                <td>{{i.L}}</td>
+                <td>{{i.M}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
+            scrolling="yes"
+            src="{% static 'html/2324收盤價k線圖.html' %}">
+    </iframe>
+</div>
+{% endblock Content %}
