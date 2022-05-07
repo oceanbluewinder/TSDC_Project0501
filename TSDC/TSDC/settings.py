@@ -25,7 +25,9 @@ SECRET_KEY = 'fc512d39-887c-4974-9bd2-520c5a292d58'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "winder.pythonanywhere.com"
+    ]
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
