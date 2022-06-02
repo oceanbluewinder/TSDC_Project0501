@@ -1,41 +1,8 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>成功了2</h1>
+<h1>chip2357</h1>
 
-<div class="container">
-    <table class="table table-dark table-striped">
-        <thead>
-            <tr>
-                <th>日期</th>
-                <th>外資買賣超</th>
-                <th>投信買賣超</th>
-                <th>自營商買賣超</th>
-                <th>買賣超總計</th>
-                <th>外資</th>
-                <th>投信</th>
-                <th>自營商</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- chip2357表格資料 -->
-            {% if chip2357 %}
-            {% for i in chip2357 %}
-            <tr>
-                <td>{{i.Date}}</td>
-                <td>{{i.A}}</td>
-                <td>{{i.B}}</td>
-                <td>{{i.C}}</td>
-                <td>{{i.D}}</td>
-                <td>{{i.E}}</td>
-                <td>{{i.F}}</td>
-                <td>{{i.G}}</td>
-            </tr>
-            {% endfor %}
-            {% endif %}
-        </tbody>
-    </table>
-</div>
 
 <div>
     <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
@@ -87,4 +54,39 @@
     測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字
     測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字
 </p>
+
+<div class="container">
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>日期</th>
+                <th>外資買賣超</th>
+                <th>投信買賣超</th>
+                <th>自營商買賣超</th>
+                <th>買賣超總計</th>
+                <th>外資</th>
+                <th>投信</th>
+                <th>自營商</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- chip2357表格資料 -->
+            {% if chip2357 %}
+            {% for i in chip2357 %}
+            <tr>
+                <td>{{i.Date}}</td>
+                <td>{{i.A}}</td>
+                <td>{{i.B}}</td>
+                <td>{{i.C}}</td>
+                <td>{{i.D}}</td>
+                <td>{{i.E}}</td>
+                <td>{{i.F}}</td>
+                <td>{{i.G}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
 {% endblock Content %}

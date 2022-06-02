@@ -9,6 +9,7 @@ import datetime as dt
 def aboutus1(request):
     return render(request, 'industry/aboutus1.html')
 
+os.chdir("/home/winder/TSDC_Project0501/TSDC")
 #散戶的50道難題
 def question1(request):
     return render(request, 'industry/question1.html')
@@ -16,28 +17,6 @@ def question2(request):
     return render(request, 'industry/question2.html')
 def question3(request):
     return render(request, 'industry/question3.html')
-
-#report財報
-def report_2324(request):
-    return render(request, 'industry/report_2324.html')
-def report_2357(request):
-    return render(request, 'industry/report_2357.html')
-def report_2365(request):
-    return render(request, 'industry/report_2365.html')
-def report_2382(request):
-    return render(request, 'industry/report_2382.html')
-def report_2809(request):
-    return render(request, 'industry/report_2809.html')
-def report_2832(request):
-    return render(request, 'industry/report_2832.html')
-def report_2849(request):
-    return render(request, 'industry/report_2849.html')
-def report_2886(request):
-    return render(request, 'industry/report_2886.html')
-def report_2891(request):
-    return render(request, 'industry/report_2891.html')
-def report_3231(request):
-    return render(request, 'industry/report_3231.html')
 
 #chip籌碼
 def chip_2324(request):
@@ -83,117 +62,51 @@ def index_2891(request):
 def index_3231(request):
     return render(request, 'industry/index_3231.html')
 
-#report財報表格
+#month月資料
+def month_2324(request):
+    return render(request, 'industry/month_2324.html')
+def month_2357(request):
+    return render(request, 'industry/month_2357.html')
+def month_2365(request):
+    return render(request, 'industry/month_2365.html')
+def month_2382(request):
+    return render(request, 'industry/month_2382.html')
+def month_2809(request):
+    return render(request, 'industry/month_2809.html')
+def month_2832(request):
+    return render(request, 'industry/month_2832.html')
+def month_2849(request):
+    return render(request, 'industry/month_2849.html')
+def month_2886(request):
+    return render(request, 'industry/month_2886.html')
+def month_2891(request):
+    return render(request, 'industry/month_2891.html')
+def month_3231(request):
+    return render(request, 'industry/month_3231.html')
+
+#report財報
 def report_2324(request):
-    df = pd.read_csv("static/csv/report2324.csv")
-  
-    # parsing the DataFrame in json format.
-    #json_records = df.reset_index().to_json(orient ='records')
-    json_records = df.to_json(orient ='records')
-    data = []
-    data = json.loads(json_records)
-    context = {'report2324': data}
-  
-    return render(request, 'industry/report_2324.html', context)
+    return render(request, 'industry/report_2324.html')
 def report_2357(request):
-    df = pd.read_csv("static/csv/report2357.csv")
-  
-    # parsing the DataFrame in json format.
-    #json_records = df.reset_index().to_json(orient ='records')
-    json_records = df.to_json(orient ='records')
-    data = []
-    data = json.loads(json_records)
-    context = {'report2357': data}
-  
-    return render(request, 'industry/report_2357.html', context)
+    return render(request, 'industry/report_2357.html')
 def report_2365(request):
-    df = pd.read_csv("static/csv/report2365.csv")
-  
-    # parsing the DataFrame in json format.
-    #json_records = df.reset_index().to_json(orient ='records')
-    json_records = df.to_json(orient ='records')
-    data = []
-    data = json.loads(json_records)
-    context = {'report2365': data}
-  
-    return render(request, 'industry/report_2365.html', context)
+    return render(request, 'industry/report_2365.html')
 def report_2382(request):
-    df = pd.read_csv("static/csv/report2382.csv")
-  
-    # parsing the DataFrame in json format.
-    #json_records = df.reset_index().to_json(orient ='records')
-    json_records = df.to_json(orient ='records')
-    data = []
-    data = json.loads(json_records)
-    context = {'report2382': data}
-  
-    return render(request, 'industry/report_2382.html', context)
+    return render(request, 'industry/report_2382.html')
 def report_2809(request):
-    df = pd.read_csv("static/csv/report2809.csv")
-  
-    # parsing the DataFrame in json format.
-    #json_records = df.reset_index().to_json(orient ='records')
-    json_records = df.to_json(orient ='records')
-    data = []
-    data = json.loads(json_records)
-    context = {'report2809': data}
-  
-    return render(request, 'industry/report_2809.html', context)
+    return render(request, 'industry/report_2809.html')
 def report_2832(request):
-    df = pd.read_csv("static/csv/report2832.csv")
-  
-    # parsing the DataFrame in json format.
-    #json_records = df.reset_index().to_json(orient ='records')
-    json_records = df.to_json(orient ='records')
-    data = []
-    data = json.loads(json_records)
-    context = {'report2832': data}
-  
-    return render(request, 'industry/report_2832.html', context)
+    return render(request, 'industry/report_2832.html')
 def report_2849(request):
-    df = pd.read_csv("static/csv/report2849.csv")
-  
-    # parsing the DataFrame in json format.
-    #json_records = df.reset_index().to_json(orient ='records')
-    json_records = df.to_json(orient ='records')
-    data = []
-    data = json.loads(json_records)
-    context = {'report2849': data}
-  
-    return render(request, 'industry/report_2849.html', context)
+    return render(request, 'industry/report_2849.html')
 def report_2886(request):
-    df = pd.read_csv("static/csv/report2886.csv")
-  
-    # parsing the DataFrame in json format.
-    #json_records = df.reset_index().to_json(orient ='records')
-    json_records = df.to_json(orient ='records')
-    data = []
-    data = json.loads(json_records)
-    context = {'report2886': data}
-  
-    return render(request, 'industry/report_2886.html', context)
+    return render(request, 'industry/report_2886.html')
 def report_2891(request):
-    df = pd.read_csv("static/csv/report2891.csv")
-  
-    # parsing the DataFrame in json format.
-    #json_records = df.reset_index().to_json(orient ='records')
-    json_records = df.to_json(orient ='records')
-    data = []
-    data = json.loads(json_records)
-    context = {'report2891': data}
-  
-    return render(request, 'industry/report_2891.html', context)
+    return render(request, 'industry/report_2891.html')
 def report_3231(request):
-    df = pd.read_csv("static/csv/report3231.csv")
-  
-    # parsing the DataFrame in json format.
-    #json_records = df.reset_index().to_json(orient ='records')
-    json_records = df.to_json(orient ='records')
-    data = []
-    data = json.loads(json_records)
-    context = {'report3231': data}
-  
-    return render(request, 'industry/report_3231.html', context)
+    return render(request, 'industry/report_3231.html')
+
+######################下面是複雜的#################################################
 
 #chip籌碼表格
 def chip_2324(request):
@@ -309,7 +222,7 @@ def chip_3231(request):
 
 #index指標報表
 def index_2324(request):
-    df = pd.read_csv("static/csv/index2324.csv")
+    df = pd.read_csv('static/csv/index2324.csv')
   
     # parsing the DataFrame in json format.
     #json_records = df.reset_index().to_json(orient ='records')
@@ -418,3 +331,227 @@ def index_3231(request):
     context = {'index3231': data}
   
     return render(request, 'industry/index_3231.html', context)
+
+#month月資料表格
+def month_2324(request):
+    df = pd.read_csv("static/csv/month2324.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'month2324': data}
+  
+    return render(request, 'industry/month_2324.html', context)
+def month_2357(request):
+    df = pd.read_csv("static/csv/month2324.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'month2357': data}
+  
+    return render(request, 'industry/month_2357.html', context)
+def month_2365(request):
+    df = pd.read_csv("static/csv/month2365.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'month2365': data}
+  
+    return render(request, 'industry/month_2365.html', context)
+def month_2382(request):
+    df = pd.read_csv("static/csv/month2382.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'month2382': data}
+  
+    return render(request, 'industry/month_2382.html', context)
+def month_2809(request):
+    df = pd.read_csv("static/csv/month2809.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'month2809': data}
+  
+    return render(request, 'industry/month_2809.html', context)
+def month_2832(request):
+    df = pd.read_csv("static/csv/month2832.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'month2832': data}
+  
+    return render(request, 'industry/month_2832.html', context)
+def month_2849(request):
+    df = pd.read_csv("static/csv/month2849.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'month2849': data}
+  
+    return render(request, 'industry/month_2849.html', context)
+def month_2886(request):
+    df = pd.read_csv("static/csv/month2886.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'month2886': data}
+  
+    return render(request, 'industry/month_2886.html', context)
+def month_2891(request):
+    df = pd.read_csv("static/csv/month2891.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'month2891': data}
+  
+    return render(request, 'industry/month_2891.html', context)
+def month_3231(request):
+    df = pd.read_csv("static/csv/month3231.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'month3231': data}
+  
+    return render(request, 'industry/month_3231.html', context)
+
+#report財報表格
+def report_2324(request):
+    df = pd.read_csv("static/csv/report2324.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'report2324': data}
+  
+    return render(request, 'industry/report_2324.html', context)
+def report_2357(request):
+    df = pd.read_csv("static/csv/report2357.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'report2357': data}
+  
+    return render(request, 'industry/report_2357.html', context)
+def report_2365(request):
+    df = pd.read_csv("static/csv/report2365.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'report2365': data}
+  
+    return render(request, 'industry/report_2365.html', context)
+def report_2382(request):
+    df = pd.read_csv("static/csv/report2382.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'report2382': data}
+  
+    return render(request, 'industry/report_2382.html', context)
+def report_2809(request):
+    df = pd.read_csv("static/csv/report2809.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'report2809': data}
+  
+    return render(request, 'industry/report_2809.html', context)
+def report_2832(request):
+    df = pd.read_csv("static/csv/report2832.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'report2832': data}
+  
+    return render(request, 'industry/report_2832.html', context)
+def report_2849(request):
+    df = pd.read_csv("static/csv/report2849.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'report2849': data}
+  
+    return render(request, 'industry/report_2849.html', context)
+def report_2886(request):
+    df = pd.read_csv("static/csv/report2886.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'report2886': data}
+  
+    return render(request, 'industry/report_2886.html', context)
+def report_2891(request):
+    df = pd.read_csv("static/csv/report2891.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'report2891': data}
+  
+    return render(request, 'industry/report_2891.html', context)
+def report_3231(request):
+    df = pd.read_csv("static/csv/report3231.csv")
+  
+    # parsing the DataFrame in json format.
+    #json_records = df.reset_index().to_json(orient ='records')
+    json_records = df.to_json(orient ='records')
+    data = []
+    data = json.loads(json_records)
+    context = {'report3231': data}
+  
+    return render(request, 'industry/report_3231.html', context)
