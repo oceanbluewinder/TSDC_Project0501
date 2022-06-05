@@ -4,11 +4,18 @@ from django.http import HttpResponse
 import pandas as pd
 import json
 import datetime as dt
+import os
 
 #關於我們aboutus
 def aboutus1(request):
     return render(request, 'industry/aboutus1.html')
+def aboutus2(request):
+    return render(request, 'industry/aboutus2.html')
+def aboutus3(request):
+    return render(request, 'industry/aboutus3.html')
 
+
+#強制更改pythonanywhere讀取statistic位置
 os.chdir("/home/winder/TSDC_Project0501/TSDC")
 #散戶的50道難題
 def question1(request):
@@ -17,6 +24,32 @@ def question2(request):
     return render(request, 'industry/question2.html')
 def question3(request):
     return render(request, 'industry/question3.html')
+def question4(request):
+    return render(request, 'industry/question4.html')
+def question5(request):
+    return render(request, 'industry/question5.html')
+
+#company公司
+def company_2324(request):
+    return render(request, 'industry/company_2324.html')
+def company_2357(request):
+    return render(request, 'industry/company_2357.html')
+def company_2365(request):
+    return render(request, 'industry/company_2365.html')
+def company_2382(request):
+    return render(request, 'industry/company_2382.html')
+def company_2809(request):
+    return render(request, 'industry/company_2809.html')
+def company_2832(request):
+    return render(request, 'industry/company_2832.html')
+def company_2849(request):
+    return render(request, 'industry/company_2849.html')
+def company_2886(request):
+    return render(request, 'industry/company_2886.html')
+def company_2891(request):
+    return render(request, 'industry/company_2891.html')
+def company_3231(request):
+    return render(request, 'industry/company_3231.html')
 
 #chip籌碼
 def chip_2324(request):

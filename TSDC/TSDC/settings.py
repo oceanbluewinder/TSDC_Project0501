@@ -26,7 +26,7 @@ SECRET_KEY = 'fc512d39-887c-4974-9bd2-520c5a292d58'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "winder.pythonanywhere.com"
+    "kaihsin.pythonanywhere.com"
     ]
 
 # Application references

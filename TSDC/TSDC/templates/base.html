@@ -101,8 +101,32 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!--<h6 class="collapse-header">Custom Components:</h6>-->
                         <a class="collapse-item" href={% url 'industry:aboutus1' %}>專案緣起</a>
-                        <a class="collapse-item" href="#">成員介紹</a>
-                        <a class="collapse-item" href="#">專案目標</a>
+                        <a class="collapse-item" href={% url 'industry:aboutus2' %}>研究動機與目的</a>
+                        <a class="collapse-item" href={% url 'industry:aboutus3' %}>成員介紹</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 公司company -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSeven"
+                   aria-expanded="true" aria-controls="collapseSeven">
+                    <i class="fas fa-industry"></i>
+                    <span>公司company</span>
+                </a>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <!--<h6 class="collapse-header">Custom Components:</h6>-->
+                        <a class="collapse-item" href={% url 'industry:company_2324' %}>2324仁寶</a>
+                        <a class="collapse-item" href={% url 'industry:company_2357' %}>2357華碩</a>
+                        <a class="collapse-item" href={% url 'industry:company_2365' %}>2365昆穎</a>
+                        <a class="collapse-item" href={% url 'industry:company_2382' %}>2382廣達</a>
+                        <a class="collapse-item" href={% url 'industry:company_2809' %}>2809京城銀</a>
+                        <a class="collapse-item" href={% url 'industry:company_2832' %}>2832台產</a>
+                        <a class="collapse-item" href={% url 'industry:company_2849' %}>2849安泰銀</a>
+                        <a class="collapse-item" href={% url 'industry:company_2886' %}>2886兆豐金</a>
+                        <a class="collapse-item" href={% url 'industry:company_2891' %}>2891中信金</a>
+                        <a class="collapse-item" href={% url 'industry:company_3231' %}>3231緯創</a>
                     </div>
                 </div>
             </li>
@@ -203,20 +227,22 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu 投資股票基本知識簡述 -->
+            <!-- 補充question -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive"
                    aria-expanded="true" aria-controls="collapseFive">
                     <i class="fas fa-coins"></i>
-                    <span>投資股票基本知識簡述</span>
+                    <span>補充question</span>
                 </a>
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                      data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!--<h6 class="collapse-header">Custom Utilities:</h6>-->
-                        <a class="collapse-item" href="{% url 'industry:question1' %}">第一道難題：零股</a>
-                        <a class="collapse-item" href="{% url 'industry:question2' %}">第二道難題</a>
-                        <a class="collapse-item" href="{% url 'industry:question3' %}">第三道難題</a>
+                        <a class="collapse-item" href="{% url 'industry:question1' %}">補充一：零股</a>
+                        <a class="collapse-item" href="{% url 'industry:question2' %}">補充二：</a>
+                        <a class="collapse-item" href="{% url 'industry:question3' %}">補充三：</a>
+                        <a class="collapse-item" href="{% url 'industry:question4' %}">補充四：</a>
+                        <a class="collapse-item" href="{% url 'industry:question5' %}">補充五：</a>
                     </div>
                 </div>
             </li>

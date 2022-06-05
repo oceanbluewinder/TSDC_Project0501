@@ -4,10 +4,26 @@ from industry import views
 app_name = "industry"
 urlpatterns = [
     path('aboutus1',views.aboutus1,name='aboutus1'),
+    path('aboutus2',views.aboutus2,name='aboutus2'),
+    path('aboutus3',views.aboutus3,name='aboutus3'),
 
     path('question1',views.question1,name='question1'),
     path('question2',views.question2,name='question2'),
     path('question3',views.question3,name='question3'),
+    path('question4',views.question4,name='question4'),
+    path('question5',views.question5,name='question5'),
+
+    path('company_2324',views.company_2324,name='company_2324'),
+    path('company_2357',views.company_2357,name='company_2357'),
+    path('company_2365',views.company_2365,name='company_2365'),
+    path('company_2365',views.company_2365,name='company_2365'),
+    path('company_2382',views.company_2382,name='company_2382'),
+    path('company_2809',views.company_2809,name='company_2809'),
+    path('company_2832',views.company_2832,name='company_2832'),
+    path('company_2849',views.company_2849,name='company_2849'),
+    path('company_2886',views.company_2886,name='company_2886'),
+    path('company_2891',views.company_2891,name='company_2891'),
+    path('company_3231',views.company_3231,name='company_3231'),
 
     path('chip_2324',views.chip_2324,name='chip_2324'),
     path('chip_2357',views.chip_2357,name='chip_2357'),

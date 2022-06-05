@@ -53,6 +53,7 @@
   <ItemGroup>
     <Content Include="industry\templates\industry\aboutus1.html" />
     <Content Include="industry\templates\industry\aboutus2.html" />
+    <Content Include="industry\templates\industry\aboutus3.html" />
     <Content Include="industry\templates\industry\chip_2324.html" />
     <Content Include="industry\templates\industry\chip_2357.html" />
     <Content Include="industry\templates\industry\chip_2365.html" />
@@ -63,6 +64,16 @@
     <Content Include="industry\templates\industry\chip_2886.html" />
     <Content Include="industry\templates\industry\chip_2891.html" />
     <Content Include="industry\templates\industry\chip_3231.html" />
+    <Content Include="industry\templates\industry\company_2324.html" />
+    <Content Include="industry\templates\industry\company_2357.html" />
+    <Content Include="industry\templates\industry\company_2365.html" />
+    <Content Include="industry\templates\industry\company_2382.html" />
+    <Content Include="industry\templates\industry\company_2809.html" />
+    <Content Include="industry\templates\industry\company_2832.html" />
+    <Content Include="industry\templates\industry\company_2849.html" />
+    <Content Include="industry\templates\industry\company_2886.html" />
+    <Content Include="industry\templates\industry\company_2891.html" />
+    <Content Include="industry\templates\industry\company_3231.html" />
     <Content Include="industry\templates\industry\index_2324.html" />
     <Content Include="industry\templates\industry\index_2357.html" />
     <Content Include="industry\templates\industry\index_2365.html" />
@@ -73,7 +84,6 @@
     <Content Include="industry\templates\industry\index_2886.html" />
     <Content Include="industry\templates\industry\index_2891.html" />
     <Content Include="industry\templates\industry\index_3231.html" />
-    <Content Include="industry\templates\industry\industry1.html" />
     <Content Include="industry\templates\industry\month_2324.html" />
     <Content Include="industry\templates\industry\month_2357.html" />
     <Content Include="industry\templates\industry\month_2365.html" />
@@ -86,6 +96,8 @@
     <Content Include="industry\templates\industry\question1.html" />
     <Content Include="industry\templates\industry\question2.html" />
     <Content Include="industry\templates\industry\question3.html" />
+    <Content Include="industry\templates\industry\question4.html" />
+    <Content Include="industry\templates\industry\question5.html" />
     <Content Include="industry\templates\industry\report_2324.html" />
     <Content Include="industry\templates\industry\report_2357.html" />
     <Content Include="industry\templates\industry\report_2365.html" />
@@ -220,6 +232,16 @@
     <Content Include="static\html\3231自營商持股數.html" />
     <Content Include="static\html\3231財報折線圖.html" />
     <Content Include="static\html\test1.html" />
+    <Content Include="static\images\2382廣達電.png" />
+    <Content Include="static\images\2324仁寶.png" />
+    <Content Include="static\images\2357華碩.png" />
+    <Content Include="static\images\2365昆盈.png" />
+    <Content Include="static\images\2809京城銀.png" />
+    <Content Include="static\images\2832台產.png" />
+    <Content Include="static\images\2849安泰銀.png" />
+    <Content Include="static\images\2886兆豐金.png" />
+    <Content Include="static\images\2891中信金.png" />
+    <Content Include="static\images\3231緯創.png" />
     <Content Include="static\images\TSDC_去背.png" />
     <Content Include="static\images\TSDC_去背ico.ico" />
     <Content Include="static\images\投資小樹.png" />
