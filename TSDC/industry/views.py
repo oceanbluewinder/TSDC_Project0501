@@ -16,7 +16,7 @@ def aboutus3(request):
 
 
 #強制更改pythonanywhere讀取statistic位置
-os.chdir("/home/winder/TSDC_Project0501/TSDC")
+os.chdir("/home/kaihsin/TSDC_Project0501/TSDC")
 #散戶的50道難題
 def question1(request):
     return render(request, 'industry/question1.html')
