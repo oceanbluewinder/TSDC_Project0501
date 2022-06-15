@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block Content %}
+{% load static %}
+<h1>廣達2382月資料</h1>
+
+<div align="center">
+    <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
+            scrolling="yes"
+            src="{% static 'html/2382月資料收盤價k線圖.html' %}">
+    </iframe>
+</div>
+
+<div class="table-wrapper" align="center">
+    <table align="center">
+        <thead>
+            <tr>
+                <th>日期</th>
+                <th>成交股數<br />(張)</th>
+                <th>成交總額<br />(元)</th>
+                <th>開盤價<br />(元)</th>
+                <th>最高價<br />(元)</th>
+                <th>最低價<br />(元)</th>
+                <th>收盤價<br />(元)</th>
+                <th>成交筆數<br />(次)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- month2382表格資料 -->
+            {% if month2382 %}
+            {% for i in month2382 %}
+            <tr>
+                <td>{{i.Date}}</td>
+                <td>{{i.A}}</td>
+                <td>{{i.B}}</td>
+                <td>{{i.C}}</td>
+                <td>{{i.D}}</td>
+                <td>{{i.E}}</td>
+                <td>{{i.F}}</td>
+                <td>{{i.G}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+<div align="center">
+    <p>符號說明:+/-/X表示漲/跌/不比價</p>
+</div>
+{% endblock Content %}

@@ -1,17 +1,26 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>index2891</h1>
+<h1>中信金2891技術指標</h1>
 
-<div>
+<div align="center">
     <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
             scrolling="yes"
             src="{% static 'html/2891收盤價k線圖.html' %}">
     </iframe>
 </div>
-
-<div class="container">
-    <table class="table table-dark table-striped">
+<div>
+    <p>
+        中信金佔整體金融股的6.7%由此可知此股價的變動深深地影響了金融股大盤，經過了相對平穩的2019，
+        迎來了卻是全球疫情的爆發不過我們可以看到2020 1-4月中信金沒有受到影響EPS為0.79元，相較2019更是高出12%。
+        但不像前面的好表現後面的股價呈現走下坡的情況即使有上升也無法回到平穩的2019。至於2021-2022可以看見成長的明顯幅度，
+        從資料來看2021的EPS來到歷史新高的2.73元，其中他們收入會如此提升的原因也脫離不了疫情恰巧相反的是其他公司因疫情而股價下跌，
+        中信金因銀行的財務管理手續費收入增加了大幅的收入，由此可知整體消費與投資的型態對於金融股或公司都是影響很大的，
+        所以你若不想有太大的投資風險，我們建議你可以從此公司下手投資。
+    </p>
+</div>
+<div class="table-index" align="center">
+    <table align="center">
         <thead>
             <tr>
                 <th>日期</th>
@@ -20,6 +29,7 @@
                 <th>開盤價<br />(元)</th>
                 <th>最高價<br />(元)</th>
                 <th>最低價<br />(元)</th>
+                <th>收盤價<br />(元)</th>
                 <th>價差<br />(元)</th>
                 <th>成交筆數<br />(元)</th>
                 <th>CDP(均價)<br />(元)</th>
@@ -44,6 +54,7 @@
                 <td>{{i.G}}</td>
                 <td>{{i.H}}</td>
                 <td>{{i.I}}</td>
+                <td>{{i.J}}</td>
                 <td>{{i.K}}</td>
                 <td>{{i.L}}</td>
                 <td>{{i.M}}</td>
@@ -53,11 +64,7 @@
         </tbody>
     </table>
 </div>
-
-<div>
-    <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
-            scrolling="yes"
-            src="{% static 'html/2891收盤價k線圖.html' %}">
-    </iframe>
+<div align="center">
+    <p>符號說明:+/-/X表示漲/跌/不比價</p>
 </div>
 {% endblock Content %}

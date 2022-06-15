@@ -87,8 +87,9 @@
     <Content Include="industry\templates\industry\month_2324.html" />
     <Content Include="industry\templates\industry\month_2357.html" />
     <Content Include="industry\templates\industry\month_2365.html" />
-    <Content Include="industry\templates\industry\month_2832.html" />
+    <Content Include="industry\templates\industry\month_2382.html" />
     <Content Include="industry\templates\industry\month_2809.html" />
+    <Content Include="industry\templates\industry\month_2832.html" />
     <Content Include="industry\templates\industry\month_2849.html" />
     <Content Include="industry\templates\industry\month_2886.html" />
     <Content Include="industry\templates\industry\month_2891.html" />
@@ -242,9 +243,16 @@
     <Content Include="static\images\2886兆豐金.png" />
     <Content Include="static\images\2891中信金.png" />
     <Content Include="static\images\3231緯創.png" />
+    <Content Include="static\images\money_stock.png" />
+    <Content Include="static\images\sorry.png" />
+    <Content Include="static\images\target.png" />
     <Content Include="static\images\TSDC_去背.png" />
     <Content Include="static\images\TSDC_去背ico.ico" />
+    <Content Include="static\images\user.png" />
+    <Content Include="static\images\宋睿騰照片.jpg" />
     <Content Include="static\images\投資小樹.png" />
+    <Content Include="static\images\鄭景鴻照片.jpg" />
+    <Content Include="static\images\陳維宇照片.jpg" />
     <Content Include="static\img\undraw_posting_photo.svg" />
     <Content Include="static\img\undraw_profile.svg" />
     <Content Include="static\img\undraw_profile_1.svg" />

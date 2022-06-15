@@ -1,5 +1,10 @@
 <!--關於我們-->
 {% extends 'base.html' %}
 {% block Content %}
-<h1>一開始就會跑到這裡0501</h1>
+{% load static %}
+<h1>歡迎點擊旁邊按鈕喔 </h1>
+
+<div align="center">
+    <img src="{% static 'images/user.png' %}" alt="可愛的企鵝" >
+</div>
 {% endblock Content %}

@@ -1,16 +1,26 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>index3231</h1>
-<div>
+<h1>緯創3231技術指標</h1>
+<div align="center">
     <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
             scrolling="yes"
             src="{% static 'html/3231收盤價k線圖.html' %}">
     </iframe>
 </div>
-
-<div class="container">
-    <table class="table table-dark table-striped">
+<div>
+    <p>
+        緯創在此類股也佔有7.9%的資本額，可以說相對也有一定的影響力，從趨勢圖來看緯創比起前面看過的其他公司比起來，
+        上漲或下跌的幅度沒有其他公司來的這麼大，不過整體走勢大多相同，所以可以知道這些佔有一定資本額的公司對於大盤相對的影響是很深的，
+        不過我們發現了在2020年7月的高點以及在這段期間廣達也出現高點，想看看是否是因為同樣的事件所導致，
+        在查完資料後發現情況大不相同緯創是出售旗下iPhone中國組裝廠緯新而廣達因Chromebook需求暢旺，
+        單月筆電出貨量衝上630萬台的歷史新高，前者是透過外資仍看好不與蘋果合作後緯創有許多的發展空間因為擺脫其中國廠的虧損，
+        未來緯創將會著重在印度。以及在2021年期初其他公司的大幅成長是在緯創沒看到的由此可知緯創的主力產品並不非當時市場需求的產品所以股價沒因此而上漲，
+        我們得到的結論是夠了解她才選擇他，很多時候雖然結果一樣不過背後的原因落差會相當大。
+    </p>
+</div>
+<div class="table-index">
+    <table align="center">
         <thead>
             <tr>
                 <th>日期</th>
@@ -19,6 +29,7 @@
                 <th>開盤價<br />(元)</th>
                 <th>最高價<br />(元)</th>
                 <th>最低價<br />(元)</th>
+                <th>收盤價<br />(元)</th>
                 <th>價差<br />(元)</th>
                 <th>成交筆數<br />(元)</th>
                 <th>CDP(均價)<br />(元)</th>
@@ -43,6 +54,7 @@
                 <td>{{i.G}}</td>
                 <td>{{i.H}}</td>
                 <td>{{i.I}}</td>
+                <td>{{i.J}}</td>
                 <td>{{i.K}}</td>
                 <td>{{i.L}}</td>
                 <td>{{i.M}}</td>
@@ -52,6 +64,8 @@
         </tbody>
     </table>
 </div>
-
+<div align="center">
+    <p>符號說明:+/-/X表示漲/跌/不比價</p>
+</div>
 
 {% endblock Content %}

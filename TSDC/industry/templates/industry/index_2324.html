@@ -1,17 +1,28 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>index2324</h1>
+<h1>仁寶2324技術指標</h1>
 
-<div>
+<div align="center">
     <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
             scrolling="yes"
             src="{% static 'html/2324收盤價k線圖.html' %}">
     </iframe>
 </div>
-
-<div class="container">
-    <table class="table table-dark table-striped">
+<div>
+    <p>
+        身為在整體類股佔有11.9%的仁寶，可以說是影響非常整體非常大的一家公司，
+        相較於整體大盤在2020年的成長幅度，在仁寶此公司是比較沒看見的，也就是說仁寶相對地比較平穩，
+        不過看到2019年6月有一個小幅的上漲，我想跟仁寶與中國聯通建立5G終端聯合研發中心有關，
+        5G在當時可以說是最新計畫的投資。在經過整體平穩的2020年，2021年初的一波高峰可以說是仁寶的代表作，
+        在疫情影響下身為市佔率有25%全球第二大筆記型電腦代工廠，遠距教學、居家上班通通影響了筆記型電腦、
+        智慧手機及平板整體的買氣，不過在台灣疫情變險峻時，有稍微下降但仍持續維持不低的股價原因就是，
+        他們不只有台灣的˙市場整體的代工產業都有它們的身影，
+        所以我們的建議是如果你夠了解世界進行式且也不想冒太大風險，你可以選擇仁寶。
+    </p>
+</div>
+<div class="table-index">
+    <table align="center">
         <thead>
             <tr>
                 <th>日期</th>
@@ -20,6 +31,7 @@
                 <th>開盤價<br />(元)</th>
                 <th>最高價<br />(元)</th>
                 <th>最低價<br />(元)</th>
+                <th>收盤價<br />(元)</th>
                 <th>價差<br />(元)</th>
                 <th>成交筆數<br />(元)</th>
                 <th>CDP(均價)<br />(元)</th>
@@ -44,6 +56,7 @@
                 <td>{{i.G}}</td>
                 <td>{{i.H}}</td>
                 <td>{{i.I}}</td>
+                <td>{{i.J}}</td>
                 <td>{{i.K}}</td>
                 <td>{{i.L}}</td>
                 <td>{{i.M}}</td>
@@ -53,5 +66,7 @@
         </tbody>
     </table>
 </div>
-
+<div align="center">
+    <p>符號說明:+/-/X表示漲/跌/不比價</p>
+</div>
 {% endblock Content %}

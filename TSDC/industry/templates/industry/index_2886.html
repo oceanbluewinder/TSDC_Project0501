@@ -1,17 +1,29 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>index2886</h1>
+<h1>兆豐金2886技術指標</h1>
 
-<div>
+<div align="center">
     <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
             scrolling="yes"
             src="{% static 'html/2886收盤價k線圖.html' %}">
     </iframe>
 </div>
-
-<div class="container">
-    <table class="table table-dark table-striped">
+<div>
+    <p>
+        從整個走勢來看占了整體6%的兆豐金走勢與金融大盤相且是一家具有官方背景的公司為為政府特許之國際貿易及匯兌專業銀行，
+        可想而知此股的股價也算是相對穩定，
+        不過2019的7月最高價與2018年的相比營收減少了11百分比由此可知2019未受疫情影響之前雖看平穩但經濟並不是非常突出。
+        2020疫情蔓延雖然1-3月股價看似上漲但兆豐金3月份虧損15.65億元，第一季的EPS=0.14 元。
+        可以知道為何四月價格下跌成交量卻如此突出，很有可能是持有者的預期心理奏效，
+        至於2021年台灣疫情的嚴重影響如同其他個股大眾的投資心態改變，
+        願意冒的風險也降低所以在投資者加成與疫情逐漸緩和兩個局面下一直上升至2022 2月，
+        在整腐作為背書的前提之下，兆豐金的價格很可能會隨著政府的決策所影響，
+        不過股價相對也較穩定是你想平穩投資的選擇。
+    </p>
+</div>
+<div class="table-index" align="center">
+    <table align="center">
         <thead>
             <tr>
                 <th>日期</th>
@@ -20,6 +32,7 @@
                 <th>開盤價<br />(元)</th>
                 <th>最高價<br />(元)</th>
                 <th>最低價<br />(元)</th>
+                <th>收盤價<br />(元)</th>
                 <th>價差<br />(元)</th>
                 <th>成交筆數<br />(元)</th>
                 <th>CDP(均價)<br />(元)</th>
@@ -44,6 +57,7 @@
                 <td>{{i.G}}</td>
                 <td>{{i.H}}</td>
                 <td>{{i.I}}</td>
+                <td>{{i.J}}</td>
                 <td>{{i.K}}</td>
                 <td>{{i.L}}</td>
                 <td>{{i.M}}</td>
@@ -53,5 +67,7 @@
         </tbody>
     </table>
 </div>
-
+<div align="center">
+    <p>符號說明:+/-/X表示漲/跌/不比價</p>
+</div>
 {% endblock Content %}

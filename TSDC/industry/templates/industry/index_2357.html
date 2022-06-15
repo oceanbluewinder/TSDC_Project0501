@@ -1,17 +1,25 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>index2357</h1>
+<h1>華碩2357技術指標</h1>
 
-<div>
+<div align="center">
     <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
             scrolling="yes"
             src="{% static 'html/2357收盤價k線圖.html' %}">
     </iframe>
 </div>
-
-<div class="container">
-    <table class="table table-dark table-striped">
+<div>
+    <p>
+        華碩在此類股僅占了2%的資本額，雖然並不多但對於我們來說華碩已經是我們非常熟悉的電子產品品牌，尤其以筆電最為我們所知，
+        2021再度蟬聯台灣的銷售霸主，不僅是如此在北美地區、西歐、亞太也都有非常好的銷售狀況，
+        所以不難知道華碩整體的走勢與仁寶、電腦類股大盤可能有點像，不僅僅會受到台灣整體市場影響，
+        全球整體對於它們的供需狀況也是會影響他們股價的，
+        最後我們給的建議就是，你如果看好電腦周邊類股大盤華碩或許可以當作你的實驗對象。
+    </p>
+</div>
+<div class="table-index" align="center">
+    <table align="center">
         <thead>
             <tr>
                 <th>日期</th>
@@ -20,6 +28,7 @@
                 <th>開盤價<br />(元)</th>
                 <th>最高價<br />(元)</th>
                 <th>最低價<br />(元)</th>
+                <th>收盤價<br />(元)</th>
                 <th>價差<br />(元)</th>
                 <th>成交筆數<br />(元)</th>
                 <th>CDP(均價)<br />(元)</th>
@@ -44,6 +53,7 @@
                 <td>{{i.G}}</td>
                 <td>{{i.H}}</td>
                 <td>{{i.I}}</td>
+                <td>{{i.J}}</td>
                 <td>{{i.K}}</td>
                 <td>{{i.L}}</td>
                 <td>{{i.M}}</td>
@@ -53,5 +63,7 @@
         </tbody>
     </table>
 </div>
-
+<div align="center">
+    <p>符號說明:+/-/X表示漲/跌/不比價</p>
+</div>
 {% endblock Content %}

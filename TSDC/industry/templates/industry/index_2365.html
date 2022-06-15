@@ -1,17 +1,24 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>index2365</h1>
+<h1>昆穎2365技術指標</h1>
 
-<div>
+<div align="center">
     <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
             scrolling="yes"
             src="{% static 'html/2365收盤價k線圖.html' %}">
     </iframe>
 </div>
-
-<div class="container">
-    <table class="table table-dark table-striped">
+<div>
+    <p>昆盈公司，這家公司的產品雖然跟我們前面介紹的其他公司有許多的不同(昆盈主要產品為滑鼠、鍵盤、網路及相機、喇叭揚聲器、
+    遊戲周邊等)，占了整體類股2%資本額的老牌公司昆盈在這麼競爭的產業仍有相當的競爭力，
+    我們可以看到整個趨勢圖與我們上面看到的類股大盤趨勢圖走勢大部分都相同，我想股價低好入手匯市此公司的優勢，
+    若今天你平常都是購買散股，股價大約10元左右的昆盈會是你持有一張完整股票並享受股市每日開盤、收盤高高低低的好選擇，
+    當然這是建立於你對於整體的電腦周邊類股夠熟悉，才能把投資風險降到最低。
+    </p>
+</div>
+<div class="table-index" align="center">
+    <table align="center">
         <thead>
             <tr>
                 <th>日期</th>
@@ -20,6 +27,7 @@
                 <th>開盤價<br />(元)</th>
                 <th>最高價<br />(元)</th>
                 <th>最低價<br />(元)</th>
+                <th>收盤價<br />(元)</th>
                 <th>價差<br />(元)</th>
                 <th>成交筆數<br />(元)</th>
                 <th>CDP(均價)<br />(元)</th>
@@ -44,6 +52,7 @@
                 <td>{{i.G}}</td>
                 <td>{{i.H}}</td>
                 <td>{{i.I}}</td>
+                <td>{{i.J}}</td>
                 <td>{{i.K}}</td>
                 <td>{{i.L}}</td>
                 <td>{{i.M}}</td>
@@ -53,5 +62,7 @@
         </tbody>
     </table>
 </div>
-
+<div align="center">
+    <p>符號說明:+/-/X表示漲/跌/不比價</p>
+</div>
 {% endblock Content %}

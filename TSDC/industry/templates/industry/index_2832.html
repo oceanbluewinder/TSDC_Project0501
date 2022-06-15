@@ -1,17 +1,27 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>index2832</h1>
+<h1>台產2832技術指標</h1>
 
-<div>
+<div align="center">
     <iframe style="position: relative; background: transparent; width: 1100px; height: 400px;"
             scrolling="yes"
             src="{% static 'html/2832收盤價k線圖.html' %}">
     </iframe>
 </div>
-
-<div class="container">
-    <table class="table table-dark table-striped">
+<div>
+    <p>
+        經過運用總金融資本額與台產資本額計算後，發現台產公司只佔了整體金融股的0.2%可以知道台產算是小公司在整個產業看來，
+        從趨勢圖很清楚的看見2020年-2021的年初有一個上升卻在下個月有很明顯的下降趨勢且沒有再回來過，
+        我們找到了歸咎的原因2020年疫情相對穩定的台灣讓台產率先推出了傳染病防疫保單，民眾若因法定傳染疾病，
+        需居家隔離、集中隔離等狀況可領5萬或10萬補償金。走在前面的台產從股價可知他們嚐了不少甜頭，
+        卻在2021年整個疫情大爆發可想而知整體理賠的金額相當可觀，截止至2022/1/25止該張保單虧損金額超過新台幣5億元，
+        由上述就可以知道如果沒有防疫保單台產應當整體走勢相當的平穩，
+        所以如果你有一筆小錢，不希望把雞蛋放在同一個籃子，那台產會是一個很好的選擇。
+    </p>
+</div>
+<div class="table-index" align="center">
+    <table align="center">
         <thead>
             <tr>
                 <th>日期</th>
@@ -20,6 +30,7 @@
                 <th>開盤價<br />(元)</th>
                 <th>最高價<br />(元)</th>
                 <th>最低價<br />(元)</th>
+                <th>收盤價<br />(元)</th>
                 <th>價差<br />(元)</th>
                 <th>成交筆數<br />(元)</th>
                 <th>CDP(均價)<br />(元)</th>
@@ -44,6 +55,7 @@
                 <td>{{i.G}}</td>
                 <td>{{i.H}}</td>
                 <td>{{i.I}}</td>
+                <td>{{i.J}}</td>
                 <td>{{i.K}}</td>
                 <td>{{i.L}}</td>
                 <td>{{i.M}}</td>
@@ -53,5 +65,7 @@
         </tbody>
     </table>
 </div>
-
+<div align="center">
+    <p>符號說明:+/-/X表示漲/跌/不比價</p>
+</div>
 {% endblock Content %}
