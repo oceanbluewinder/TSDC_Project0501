@@ -1,9 +1,22 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>暫時沒有東西 </h1>
+<h1>為什麼要用技術指標、財報等問題？ </h1>
 
-<div align="center">
-    <img src="{% static 'images/sorry.png' %}" alt="sorry">
+<div class="Frame">
+    <div class="bdcard">
+        <img src="{% static 'images/financial_report.png' %}" alt="財報">
+    </div>
+    <div class="bdtext">
+        <p>
+            技術指標能夠簡化市場的資訊（包含過去短期走勢、平均成本等等）。在做技術分
+            析時，投資者可藉由技術指標，來評估過去狀況，對未來做出決策。
+            財務報表是公司的成績單，以量化方式反映一家企業過去一個會計期間的財政
+            表現，可以用來判斷一間公司的營運好壞。
+        </p>
+        <a href="https://rich01.com/what-is-technical-indicator/">資料參考市場先生</a><br />
+        <a href="https://zh.wikipedia.org/wiki/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8">資料參考維基百科</a><br />
+        <a href="https://george-dewi.com/financial-report-analysis/#t-1600849675464">資料參考慢活夫妻</a>
+    </div>
 </div>
 {% endblock Content %}

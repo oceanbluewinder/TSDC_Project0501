@@ -2,9 +2,34 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>暫時沒有東西 </h1>
+<h1>甚麼是作多、作空、空頭？ </h1>
 
-<div align="center">
-    <img src="{% static 'images/sorry.png' %}" alt="sorry">
+<div class="Frame">
+    <div class="bdcard">
+        <img src="{% static 'images/up.png' %}" alt="股票上漲">
+    </div>
+    <div class="bdtext">
+        <h2>作空</h2>
+        <p>
+            做多和做空是期貨以及期貨用語，是指空頭和多頭<br />
+            多是預計上漲，做多就是買入的意思也就是買入建倉，看好後市準備賺取上漲差
+            價。
+
+        </p>
+    </div>
 </div>
+
+<div class="Frame">
+    <div class="bdcard">
+        <img src="{% static 'images/down.png' %}" alt="股票下跌">
+    </div>
+    <div class="bdtext">
+        <h2>做空</h2>
+        <p>
+            空就是預計下跌，做空就是賣出的意思。做空是賣出建倉，看空後市準備
+            賺取下跌差價。
+        </p>
+    </div>
+</div>
+
 {% endblock Content %}

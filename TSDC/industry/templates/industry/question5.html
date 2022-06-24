@@ -1,9 +1,25 @@
 {% extends 'base.html' %}
 {% block Content %}
 {% load static %}
-<h1>暫時沒有東西 </h1>
+<h1>為什麼要看道瓊工業指數、納斯達克指數？ </h1>
 
-<div align="center">
-    <img src="{% static 'images/sorry.png' %}" alt="sorry">
+<div class="Frame">
+    <div class="bdcard">
+        <img src="{% static 'images/trade.png' %}" alt="財報">
+    </div>
+    <div class="bdtext">
+        <h2>道瓊工業指數</h2>
+        <p>
+            ：由美國30家知名「藍籌股」組成，是各個行業的領先者，代表美國最大、
+            最知名的股票。所以，道瓊指數可代表美國經濟走勢、關注美國藍籌股的走勢。
+        </p>
+        <h2>納斯達克指數</h2>
+        <p>
+            以科技公司為主的股票指數，是全球最重要的科技股指標，各國
+            科技電子類股多半會隨其上漲或下跌。
+        </p>
+        <a href="https://histock.tw/blog/histock1688/77">資料參考嗨投資</a><br />
+        <a href="https://rich01.com/what-is-nasdaq-index/">資料參考市場先生</a>
+    </div>
 </div>
 {% endblock Content %}

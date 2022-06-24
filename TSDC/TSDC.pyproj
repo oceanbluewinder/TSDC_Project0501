@@ -232,7 +232,6 @@
     <Content Include="static\html\3231月資料收盤價k線圖.html" />
     <Content Include="static\html\3231自營商持股數.html" />
     <Content Include="static\html\3231財報折線圖.html" />
-    <Content Include="static\html\test1.html" />
     <Content Include="static\images\2382廣達電.png" />
     <Content Include="static\images\2324仁寶.png" />
     <Content Include="static\images\2357華碩.png" />
@@ -243,11 +242,16 @@
     <Content Include="static\images\2886兆豐金.png" />
     <Content Include="static\images\2891中信金.png" />
     <Content Include="static\images\3231緯創.png" />
+    <Content Include="static\images\down.png" />
+    <Content Include="static\images\financial_report.png" />
     <Content Include="static\images\money_stock.png" />
+    <Content Include="static\images\shareholder.png" />
     <Content Include="static\images\sorry.png" />
     <Content Include="static\images\target.png" />
+    <Content Include="static\images\trade.png" />
     <Content Include="static\images\TSDC_去背.png" />
     <Content Include="static\images\TSDC_去背ico.ico" />
+    <Content Include="static\images\up.png" />
     <Content Include="static\images\user.png" />
     <Content Include="static\images\宋睿騰照片.jpg" />
     <Content Include="static\images\投資小樹.png" />

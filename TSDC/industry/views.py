@@ -577,6 +577,14 @@ def report_2891(request):
     context = {'report2891': data}
   
     return render(request, 'industry/report_2891.html', context)
+
+
+
+
+
+
+
+
 def report_3231(request):
     df = pd.read_csv("static/csv/report3231.csv")
   
